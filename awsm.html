@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Graph</title>
+    <!-- <link rel="image_src" href="https://static01.nyt.com/images/2012/02/13/us/politics/promo-budget-190x126.png"> -->
+    <link rel="stylesheet" type="text/css" href="https://static01.nyt.com/css/0.1/screen/build/interactive/us/politics/styles.css">
+</head>
+
+<body id="interactiveABC">
+    <div id="shell">
+        <div id="page" class="tabContent active">
+            <div id="main">
+                <div id="interactiveShell">
+                    <div class="columnGroup firstColumnGroup">
+                        <div class="ledeStory">
+                            <div id="interactiveFreeFormMain">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <div class="nytg">
+                                    <!-- <![if !IE]> -->
+                                    <div id="nytg-chartFrame">
+                                        <!-- <![endif]> -->
+                                        <div id="nytg-chart">
+                                            <div class="nytg-navBar">
+                                                <div id="nytg-search" style="display:none;"></div>
+                                                <ul class="nytg-navigation clearfix">
+                                                    <li id="nytg-nav-all">All Spending</li>
+                                                    <li id="nytg-nav-mandatory">Types of Spending</li>
+                                                    <li id="nytg-nav-discretionary">Changes</li>
+                                                    <li id="nytg-nav-deparment">Department Totals</li>
+                                                    <!--<li id="nytg-nav-comparison">Historical</li> -->
+                                                </ul>
+                                            </div>
+                                            <!-- ------------------for tooltip------------------------ -->
+                                            <div id="nytg-tooltip">
+                                                <div id="nytg-tooltipContainer">
+                                                    <div class="nytg-department"></div>
+                                                    <div class="nytg-rule"></div>
+                                                    <div class="nytg-name"></div>
+                                                    <div class="nytg-discretion"></div>
+                                                    <div class="nytg-valuesContainer">
+                                                        <span class="nytg-value"></span>
+                                                        <span class="nytg-change"></span>
+                                                    </div>
+                                                    <div class="nytg-chart"></div>
+                                                    <div class="nytg-tail"></div>
+                                                </div>
+                                            </div>
+                                            <div id="nytg-overlays">
+                                                <div class="nytg-overlay" id="nytg-totalOverlay">
+                                                    <div id="nytg-colorKey">
+                                                        <!-- <p>Circles are sized according to the proposed spending.</p> -->
+                                                        <p>Color shows amount of cut or increase from 2012.</p>
+                                                        <ul class="nytg-colorSwatches">
+                                                            <li class="change-decrease3"></li>
+                                                            <li class="change-decrease2"></li>
+                                                            <li class="change-decrease1"></li>
+                                                            <li class="change-increase1"></li>
+                                                            <li class="change-increase2"></li>
+                                                            <li class="change-increase3"></li>
+                                                        </ul>
+                                                        <ul class="nytg-colorLabels">
+                                                            <li>&ndash;25%</li>
+                                                            <li>&ndash;5%</li>
+                                                            <li>0</li>
+                                                            <li>+5%</li>
+                                                            <li>+25%</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="nytg-overlay" id="nytg-mandatoryOverlay">
+                                                    <div class="nytg-mandatoryExplainer">
+                                                    </div>
+                                                    <div class="nytg-mandatoryAside">
+                                                        <h5>Mandatory</h5>
+                                                        <p><strong style="font-size:16px;padding-bottom:4px;display:block;">$2.5 trillion</strong></p>
+                                                        <p>About 70 percent of budgetary spending is controlled by existing laws, including entitlements like Medicare, Medicaid and Social Security.</p>
+                                                    </div>
+                                                    <div class="nytg-discretionaryExplainer">
+                                                    </div>
+                                                    <div class="nytg-discretionaryAside">
+                                                        <h5>Discretionary</h5>
+                                                        <p><strong style="font-size:16px;padding-bottom:4px;display:block;">$1.1 trillion</strong></p>
+                                                        <p>Only about 30 percent of the budget is controlled by the annual budget process. Last August, the White House and Congress agreed to a cap on this spending.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="nytg-overlay" id="nytg-discretionaryOverlay">
+                                                    <div id="nytg-discretionaryIntro">
+                                                        <h5>Changes to Discretionary Spending</h5>
+                                                        <p>Discretionary spending is controlled by the annual budget process. The White House and Congress agreed to a cap in spending in August, so proposed increases in categories like education and energy require cuts in other areas.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="nytg-overlay" id="nytg-departmentOverlay">
+                                                    <p class="nytg-emptyCircleLabel">Empty circles show income.</p>
+                                                </div>
+                                                <div class="nytg-overlay" id="nytg-comparisonOverlay">
+                                                    <h5>Comparison Overlay</h5>
+                                                </div>
+                                            </div>
+                                            <div id="nytg-chartCanvas"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script type="text/javascript" src="a1.js"></script>
+                                <script type='text/javascript'>
+                                /********************************
+                                 ** FILE: Javascript templates
+                                 ********************************/
+
+                                // var nytg = nytg || {};
+                                </script>
+                                <script type='text/javascript' src="a2.js">
+                                </script>
+                                <!--END Stencil generated content. -->
+                            </div>
+                            <!--close main free form -->
+                        </div>
+                        <!--close .ledeStory -->
+                    </div>
+                    <!--close .columnGroup -->
+                </div>
+                <!--close #interactiveShell -->
+            </div>
+            <!--close #main -->
+        </div>
+        <!--close #page -->
+    </div>
+    <!--close #shell -->
+    <!-- <script type="text/javascript" language="JavaScript" src="https://static01.nyt.com/js/app/homepage/articleCommentCounts.js"></script> -->
+    <!-- <script type = "text/javascript" language = "JavaScript" src="a3.js"></script> -->
+    <!-- 
+<IMG CLASS="hidden" SRC="/adx/bin/clientside/bdfabea9Q2FQ60Q60Q60Q60Q60Q60cQ60cQ7EJkQ7EQ22ckQ3CQ60Q60Q60Q60Q60Q60Q60Q60cQ2BkkQ2BQ2BQ7DQ7CQ3CQ60Q60Q60Q22AQ7DLOQ3CFL" height="1" width="3"> -->
+    <!-- Start UPT call -->
+    <!-- <img height="1" width="3" border=0 src="http://up.nytimes.com/?d=0//&t=6&s=0&ui=0&r=&u=www%2enytimes%2ecom%2finteractive%2f2012%2f02%2f13%2fus%2fpolitics%2f2013%2dbudget%2dproposal%2dgraphic%2ehtml%3f%5fr%3d1"> -->
+    <!-- End UPT call -->
+    <!--  <script language="JavaScript">
+          var dcsvid="0";
+          var regstatus="non-registered";
+        //</script> -->
+    <!--   <script src="https://static01.nyt.com/js/app/analytics/trackingTags_v1.1.js" type="text/javascript"></script> -->
+    <!--   <noscript>
+          <div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="http://wt.o.nytimes.com/dcsym57yw10000s1s8g0boozt_9t1x/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=1.0.7"/></div>
+        </noscript> -->
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>project1</title>
+	<script type="text/javascript" src="script/d3.v2.min.js"></script>
+</head>
+<body>
+ <!-- <p>Hello!</p> -->
+
+
+ <!-- ------------------ SVG Concept-------------------- -->
+ <svg>
+<!--  d3.select("body").append("svg").attr("width", 50).attr("height", 50).append("circle").attr("cx", 25).attr("cy", 25).attr("r", 25).style("fill", "purple"); -->
+ </svg>
+<svg width="50" height="50">
+  <circle cx="25" cy="25" r="25" fill="purple" />
+</svg>
+<!--  <script>
+  var bodySelection = d3.select("body");
+ 
+ var svgSelection = bodySelection.append("svg")
+       .attr("width", 50)
+       .attr("height", 50);
+ 
+ var circleSelection = svgSelection.append("circle")
+      .attr("cx", 25)
+      .attr("cy", 25)
+      .attr("r", 25)
+     .style("fill", "purple");
+</script>
+
+ <svg width="50" height="50">
+ <circle cx="25" cy="25" r="25" fill="purple" />
+</svg> -->
+
+<!-- ------------------Binding data into DOM Elements----------------------- -->
+
+<!-- <script>
+var theData = [ 1, 2, 3 ]
+
+var p = d3.select("body").selectAll("p")
+  .data(theData)
+ .enter()
+  .append("p")
+ .text("hello ");
+</script> -->
+
+
+<!-- -----------------end Binding data into DOM Elements--------------------- -->
+</body>
+</html>
