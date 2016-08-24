@@ -5,8 +5,13 @@
 		<script type="text/javascript" src="script/d3.v2.min.js"></script>
 </head>
 <body>
-
-
+<style type="text/css">
+	.add{
+		position: relative;
+margin-left: 5em;
+	}
+</style>
+<div class="add"></div>
 <!-- <script type="text/javascript">
 
 ------basic exampl for creating svg circle-------
@@ -26,7 +31,7 @@
 <script type="text/javascript">
 	var spaceCircles = [30, 10,  70];
 
-	var svgContainer = d3.select("body").append("svg")
+	var svgContainer = d3.select(".add").append("svg")
 	 .attr("width", 200)
 	 .attr("height", 200)
 	 .style("border","1px solid red");

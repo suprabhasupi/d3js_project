@@ -5,9 +5,32 @@
 	<title>Our project</title>
 	<script type="text/javascript" src="script/d3.v2.min.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+	<!-- <script src="https://d3js.org/d3-color.v1.min.js"></script> -->
+<!-- <script src="https://d3js.org/d3-dispatch.v1.min.js"></script> -->
+<!-- <script src="https://d3js.org/d3-ease.v1.min.js"></script> -->
+<!-- <script src="https://d3js.org/d3-interpolate.v1.min.js"></script> -->
+<!-- <script src="https://d3js.org/d3-selection.v1.min.js"></script> -->
+<!-- <script src="https://d3js.org/d3-timer.v1.min.js"></script> -->
+<!-- <script src="https://d3js.org/d3-transition.v1.min.js"></script> -->
+<script>
+
+// var transition = d3.transition();
+
+</script>
 </head>
 <body>
+
+
+<!-- <select id = "opts">
+  <option value="circle1">Small</option>
+  <option value="circle2" selected="selected">Medium</option> 
+  <option value="circle3">Large</option>
+</select>  -->
+
+<button onclick="showAge()"> Show age</button>
+<button onclick="showAmb()"> Show Amb</button>
+<div class="add"></div>
 <style type="text/css">
 	.d3-tip {
   line-height: 1;
@@ -37,6 +60,13 @@
   top: 100%;
   left: 0;
 }
+.add{
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-left: 14em;
+	margin-top: 5em;
+}
 </style>
 <script type="text/javascript">
 	// var spaceCircles = [30, 70, 110];
@@ -44,45 +74,91 @@
 	var jsonCircles=[
 	{
 		"id" :1,
-		"x_axis":30,
-		"y_axis":30,
-		"radius":20,
+		"x_axis":50,
+		"y_axis":50,
+		"radius":30,
 		"color":"green",
 		"name" : "Good Human Being"
 	},
 	{
 		"id" :2,
-		"x_axis":80,
-		"y_axis":80,
-		"radius":40,
+		"x_axis":150,
+		"y_axis":90,
+		"radius":60,
 		"color":"blue",
 		"name":"IAS"
 	},
 	{
 		"id" :3,
-		"x_axis":160,
-		"y_axis":160,
-		"radius":60,
+		"x_axis":280,
+		"y_axis":185,
+		"radius":80,
 		"color":"red",
 		"name":"Doctor"
 	},{
 		"id" :4,
-		"x_axis":250,
-		"y_axis":250,
-		"radius":70,
+		"x_axis":500,
+		"y_axis":170,
+		"radius":120,
 		"color":"yellow",
 		"name":"Frontend Ninza"
 	},
 	
 	{
 		"id" :5,
-		"x_axis":320,
-		"y_axis":350,
-		"radius":30,
+		"x_axis":680,
+		"y_axis":180,
+		"radius":35,
 		"color":"pink",
 		"name":"Beautician"
 	}
 	];
+
+	// second-----------------
+
+	var jsonCircles2=[
+	{
+		"id" :1,
+		"x_axis":50,
+		"y_axis":50,
+		"radius":30,
+		"color":"red",
+		"name" : "Good Human Being"
+	},
+	{
+		"id" :2,
+		"x_axis":150,
+		"y_axis":90,
+		"radius":60,
+		"color":"green",
+		"name":"IAS"
+	},
+	{
+		"id" :3,
+		"x_axis":280,
+		"y_axis":185,
+		"radius":80,
+		"color":"lightgrey",
+		"name":"Doctor"
+	},{
+		"id" :4,
+		"x_axis":500,
+		"y_axis":170,
+		"radius":120,
+		"color":"mediumpurple",
+		"name":"Frontend Ninza"
+	},
+	
+	{
+		"id" :5,
+		"x_axis":680,
+		"y_axis":180,
+		"radius":35,
+		"color":"linen",
+		"name":"Beautician"
+	}
+	];
+
 	// {
 	// 	"id" :6,
 	// 	"x_axis":160,
@@ -100,7 +176,7 @@
   .offset([-10, 0])
   .html(function(d) {
   	//tooltip info shold be there in the json
-    return "<strong>Name:</strong> <span style='color:red'>" + d.name + "</span>";
+    return "<strong></strong> <span style='color:red'>" + d.name + "</span>";
   })
 //End Tip JS
 
@@ -123,7 +199,7 @@
 
     // selecting body container for SVG
 
-	var svgContainer = d3.select("body").append("svg")
+	var svgContainer = d3.select(".add").append("svg")
 	 .attr("width", 800)
 	 .attr("height", 500)
 	 .style("border","1px solid black");
@@ -134,6 +210,53 @@
 	 //for drag
 	 // svgContainer.call(drag);
 
+	 // var circles=svgContainer.selectAll("circle")
+	 // .data(jsonCircles2)
+	 // .enter()
+	 // .append("circle")
+	 // // .on("mouseover", function(d){
+	 // //  d3.select(this).style("fill", "pink");
+		// // })
+	 // .on('mouseover', tip.show)
+  //     .on('mouseout', tip.hide);
+	 // // .on("mouseout", function(d){
+	 // //  d3.select(this).style("fill", "trasparent");
+		// // });
+
+	 // //get the attribute
+
+	 var showAge = function(){
+
+	 var circles=svgContainer.selectAll("circle")
+	 .data(jsonCircles2)
+	 .enter()
+	 .append("circle")
+	 // .on("mouseover", function(d){
+	 //  d3.select(this).style("fill", "pink");
+		// })
+	 .on('mouseover', tip.show)
+      .on('mouseout', tip.hide);
+	 // .on("mouseout", function(d){
+	 //  d3.select(this).style("fill", "trasparent");
+		// });
+
+	 //get the attribute
+	 var circleAttributes=circles
+	 .transition()
+    .duration(750)
+    .delay(500)
+   .ease("bounce")
+    .attr("cx",function(d){return d.x_axis;})
+	 							.attr("cy",function(d){return d.y_axis;})
+	 							.attr("r",function(d){return d.radius;})
+	 							.style("fill",function(d){return d.color;});
+
+
+
+	 }
+
+var showAmb = function(){
+	 	
 	 var circles=svgContainer.selectAll("circle")
 	 .data(jsonCircles)
 	 .enter()
@@ -153,32 +276,27 @@
 	 .transition()
     .duration(750)
     .delay(500)
-   .ease("elastic")
+   .ease("bounce")
     .attr("cx",function(d){return d.x_axis;})
 	 							.attr("cy",function(d){return d.y_axis;})
 	 							.attr("r",function(d){return d.radius;})
 	 							.style("fill",function(d){return d.color;});
 
-// 	 							function zoomed() {
-//   svgContainer.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-// }
+
+	 }
+
+	 // var circleAttributes=circles
+	 // .transition()
+  //   .duration(750)
+  //   .delay(500)
+  //  .ease("bounce")
+  //   .attr("cx",function(d){return d.x_axis;})
+	 // 							.attr("cy",function(d){return d.y_axis;})
+	 // 							.attr("r",function(d){return d.radius;})
+	 // 							.style("fill",function(d){return d.color;});
 
 
-// function dragstarted(d) {
-//   d3.event.sourceEvent.stopPropagation();
-//   d3.select(this).classed("dragging", true);
-// }
-
-// function dragged(d) {
-//   d3.select(this).attr("cx", d.x = d3.event.x).attr("cy", d.y = d3.event.y);
-// }
-
-// function dragended(d) {
-//   d3.select(this).classed("dragging", false);
-// }
-
-	 							 
-	 	// 						.on("mouseover", function(d){
+ 	// 						.on("mouseover", function(d){
 			// 	d3.select(this).style("fill", "pink");
 			// });
 	 							
