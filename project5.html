@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple svg</title>
+		<script type="text/javascript" src="script/d3.v2.min.js"></script>
+</head>
+<body>
+
+
+<!-- <script type="text/javascript">
+
+------basic exampl for creating svg circle-------
+
+
+	var svgContainer= d3.select("body").append("svg").attr("width",200).attr("height",200)
+	.style("border","1px solid black");
+
+	var circleSection=svgContainer.append("circle").attr("cx",65).attr("cy",65).attr("r",60).style("fill","red");
+
+	------End of basic exampl for creating svg circle-------
+
+
+</script>
+ -->
+
+<script type="text/javascript">
+	var spaceCircles = [30, 10,  70];
+
+	var svgContainer = d3.select("body").append("svg")
+	 .attr("width", 200)
+	 .attr("height", 200)
+	 .style("border","1px solid red");
+
+	 var circles = svgContainer.selectAll("circle")
+	    .data(spaceCircles)
+	      .enter()
+	      .append("circle");
+
+	      var circleAttributes=circles.attr("cx",function(d){return d;})
+	      .attr("cy",function(d){return d;})
+	      .attr("r",20)
+	        .style("fill", function(d) 
+	        	{
+	        		var returnColor;
+	        		  if (d === 30) { returnColor = "green";
+                        } 
+                        else if (d === 70) { returnColor = "purple";
+                        }
+                         else if (d === 110) { returnColor = "red"; }
+                        return returnColor;
+                     });
+
+
+
+
+
+
+</script>
+</body>
+</html>

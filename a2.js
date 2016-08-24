@@ -8168,7 +8168,7 @@ nytg.Chart = function() {
         },
         discretionFormat: function(d) {
             if (d == 'Discretionary' || d == 'Mandatory') {
-                return d + " spending"
+                return d + " "
             } else {
                 return d
             }
