@@ -1,0 +1,39 @@
+[{
+            "id": 1,
+            "x_axis": 150,
+            "y_axis": 180,
+            "radius": 30,
+            "color": "green",
+            "name": "Good Human Being"
+        }, {
+            "id": 2,
+            "x_axis": 250,
+            "y_axis": 90,
+            "radius": 60,
+            "color": "blue",
+            "name": "IAS"
+        }, {
+            "id": 3,
+            "x_axis": 280,
+            "y_axis": 185,
+            "radius": 80,
+            "color": "red",
+            "name": "Doctor"
+        }, {
+            "id": 4,
+            "x_axis": 500,
+            "y_axis": 170,
+            "radius": 120,
+            "color": "yellow",
+            "name": "Frontend Ninza"
+        },
+
+        {
+            "id": 5,
+            "x_axis": 680,
+            "y_axis": 180,
+            "radius": 35,
+            "color": "pink",
+            "name": "Beautician"
+        }
+    ]
