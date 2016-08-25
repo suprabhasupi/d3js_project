@@ -14,12 +14,28 @@
         })
         //End Tip JS
 
+
+
     // selecting body container for SVG
 
     var svgContainer = d3.select(".add").append("svg")
         .attr("width", 800)
         .attr("height", 500)
         .style("border", "1px solid black");
+
+//             svgContainer.append("stop")
+//     .attr("offset", "0%")
+//     .attr("stop-color", "#FFF76B");
+// svgContainer.append("stop")
+//     .attr("offset", "50%")
+//     .attr("stop-color", "#FFF845");
+// svgContainer.append("stop")
+//     .attr("offset", "90%")
+//     .attr("stop-color", "#FFDA4E");
+// svgContainer.append("stop")
+//     .attr("offset", "100%")
+//     .attr("stop-color", "#FB8933");
+
     //for the tip
     svgContainer.call(tip)
 
@@ -35,13 +51,38 @@
                     return d;
                 });
 
+                 // svgContainer.select(“this”).transition()
+
             circle.enter().append("circle")
-              .attr("transform", "rotate(-720)")
+              // .attr("transform", "rotate(-720)")
             .attr("transform", "scale(1)")
+            .on( 'mouseenter', function() {
+          // select element in current context
+          d3.select( this )
+            // add transition
+            .transition()
+            // change attribute
+            // .attr( 'r', 10 );
+            .style("fill", "red");
+        } )
+
+               .on( 'mouseleave', function() {
+          // select element in current context
+          d3.select( this )
+            // add transition
+            .transition()
+            // change attribute
+            // .attr( 'r', 16 );
+            .style("fill", function(d) {
+                    return d.color;
+                });
+        } )
+    //         
              .on('mouseover', tip.show)
             .on('mouseout', tip.hide);
 
             circle.transition()
+
             .duration(2000)
             .delay(1000)
             .ease("bounce")
@@ -53,9 +94,11 @@
                 .attr("cy", function(d) {
                     return d.y_axis;
                 })
+                  // .transition()
                 .attr("r", function(d) {
                     return d.radius;
                 })
+                  // .transition()
                 .style("fill", function(d) {
                     return d.color;
                 });
@@ -68,6 +111,11 @@
 
 
     drawCirc(circle2);
+
+ 
+
+     
+
 
     // var showAmb = function() {
 
@@ -142,6 +190,10 @@
     //     .attr('font-size', 20)
     //     .attr('fill', '#333');
     // });
+
+   
+
+
 
     // .ease("bounce") or .ease("elastic") after .transition() you can achieve that effect. note that bounce and elastic are similar but not the same.
     // </script>
