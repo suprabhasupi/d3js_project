@@ -3,32 +3,161 @@
 <head>
 	<title>Simple svg</title>
 		<script type="text/javascript" src="script/d3.v2.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
 </head>
 <body>
 <style type="text/css">
 	.add{
 		position: relative;
-margin-left: 5em;
+    margin-left: 5em;
+    margin-top: 5em;
 	}
+	.d3-tip {
+        line-height: 1;
+        font-weight: bold;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 2px;
+    }
+    /* Creates a small triangle extender for the tooltip */
+    
+    .d3-tip:after {
+        box-sizing: border-box;
+        display: inline;
+        font-size: 10px;
+        width: 100%;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.8);
+        content: "\25BC";
+        position: absolute;
+        text-align: center;
+    }
+    /* Style northward tooltips differently */
+    
+    .d3-tip.n:after {
+        margin: -1px 0 0 0;
+        top: 100%;
+        left: 0;
+    }
+    
 </style>
 <div class="add"></div>
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 
-------basic exampl for creating svg circle-------
+// ------basic exampl for creating svg circle-------
 
+ var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([-10, 0])
+        .html(function(d) {
+            //tooltip info shold be there in the json
+            return "<strong>hello</strong> <span style='color:red'>" +  + "</span>";
+        })
 
-	var svgContainer= d3.select("body").append("svg").attr("width",200).attr("height",200)
+	var svgContainer= d3.select("body").append("svg")
+	.attr("width",800)
+	.attr("height",500)
 	.style("border","1px solid black");
+	 
+	 svgContainer.call(tip)
 
-	var circleSection=svgContainer.append("circle").attr("cx",65).attr("cy",65).attr("r",60).style("fill","red");
 
-	------End of basic exampl for creating svg circle-------
+	 // 1st circle 
+
+	var circleSection=svgContainer.append("circle")
+	.attr("cx",50)
+	.attr("cy",50)
+	// .transition()
+	 // .delay(1000)
+	 // .duration(1500)
+	.attr("r",0)
+	.attr("r",30)
+	// .ease("elastic")
+	// .attr("r",0)
+	.style("fill","red")
+
+	 // d3.select('circle')
+        // .on('mouseover', function() {
+        //    tip.show;
+        // });
+        // .on('mouseout', function() {
+        //    tip.hide
+        // });
+
+
+	.on('mouseover', tip.show)
+    .on('mouseout', tip.hide);
+
+	 // 2nd circle 
+
+	var circleSection=svgContainer.append("circle")
+	.attr("cx",150)
+	.attr("cy",90)
+	.transition()
+	 // .delay(1000)
+	 .duration(1700)
+	.attr("r",0)
+	.attr("r",60)
+	// .ease("elastic")
+	// .attr("r",0)
+	.style("fill","green");
+
+	// 3rd circle 
+
+	var circleSection=svgContainer.append("circle")
+	.attr("cx",280)
+	.attr("cy",185)
+	.transition()
+	 // .delay(1000)
+	 .duration(2900)
+	.attr("r",0)
+	.attr("r",80)
+	// .ease("elastic")
+	// .attr("r",0)
+	.style("fill","blue");
+
+
+	// 3rd circle 
+
+	var circleSection=svgContainer.append("circle")
+	.attr("cx",500)
+	.attr("cy",170)
+	.transition()
+	 // .delay(1000)
+	 .duration(2100)
+	.attr("r",0)
+	.attr("r",120)
+	// .ease("elastic")
+
+	// .attr("r",0)
+	.style("fill","linen");
+
+
+	// 3rd circle 
+
+	var circleSection=svgContainer.append("circle")
+	.attr("cx",680)
+	.attr("cy",180)
+	.transition()
+	 // .delay(1000)
+	 .duration(2300)
+	.attr("r",0)
+	.attr("r",35)
+	// .ease("elastic")
+	// .attr("r",0)
+	.style("fill","mediumpurple");
+
+	// .on('mouseover', tip.show)
+ //    .on('mouseout', tip.hide);
+
+	// ------End of basic exampl for creating svg circle-------
 
 
 </script>
- -->
 
-<script type="text/javascript">
+
+<!-- <script type="text/javascript">
 	var spaceCircles = [30, 10,  70];
 
 	var svgContainer = d3.select(".add").append("svg")
@@ -60,6 +189,6 @@ margin-left: 5em;
 
 
 
-</script>
+</script> -->
 </body>
 </html>

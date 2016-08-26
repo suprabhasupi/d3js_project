@@ -12,7 +12,7 @@
     clusterPadding = 6, // separation between different-color nodes
     maxRadius = 12;
 
-var n = 200, // total number of nodes
+var n = 10, // total number of nodes
     m = 10; // number of distinct clusters
 
 var color = d3.scale.category10()
@@ -43,7 +43,7 @@ d3.layout.pack()
 var force = d3.layout.force()
     .nodes(nodes)
     .size([width, height])
-    .gravity(.02)
+    .gravity(.09s)
     .charge(0)
     .on("tick", tick)
     .start();

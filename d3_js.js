@@ -17,24 +17,11 @@
 
 
     // selecting body container for SVG
-
+var id=2; 
     var svgContainer = d3.select(".add").append("svg")
         .attr("width", 800)
         .attr("height", 500)
         .style("border", "1px solid black");
-
-//             svgContainer.append("stop")
-//     .attr("offset", "0%")
-//     .attr("stop-color", "#FFF76B");
-// svgContainer.append("stop")
-//     .attr("offset", "50%")
-//     .attr("stop-color", "#FFF845");
-// svgContainer.append("stop")
-//     .attr("offset", "90%")
-//     .attr("stop-color", "#FFDA4E");
-// svgContainer.append("stop")
-//     .attr("offset", "100%")
-//     .attr("stop-color", "#FB8933");
 
     //for the tip
     svgContainer.call(tip)
@@ -55,7 +42,8 @@
 
             circle.enter().append("circle")
               // .attr("transform", "rotate(-720)")
-            .attr("transform", "scale(1)")
+            // .attr("class", function(d) { return "fadeIn " + d.effect })
+            // .attr("transform", "scale(1)")
             .on( 'mouseenter', function() {
           // select element in current context
           d3.select( this )
@@ -81,11 +69,34 @@
              .on('mouseover', tip.show)
             .on('mouseout', tip.hide);
 
-            circle.transition()
+            circle
+            // .transition()
 
-            .duration(2000)
-            .delay(1000)
-            .ease("bounce")
+            // .duration(500)
+            // .delay(1000)
+            // .ease("bounce")
+
+
+            .attr("id", function(d, i)
+             {
+                if (i == 1) {
+                  // circle.style("delay",function(d){
+                        return i.delay=1000000;
+          // })
+              }
+          })
+
+
+            // .attr("id",function(d){
+            //     // return d.id;
+            //      if (d.id == 2) {
+            //         // return delay1
+            //         // delay(6000)
+            //          circle.style("fill",function(d){
+            //             return d.color="green";
+            //          });
+            //     }  
+            // })
 
             .attr("cx", function(d) {
                     // console.log(d)
@@ -94,7 +105,9 @@
                 .attr("cy", function(d) {
                     return d.y_axis;
                 })
-                  // .transition()
+                  .transition()
+                   .duration(2500)
+                   .attr("r", 0)
                 .attr("r", function(d) {
                     return d.radius;
                 })
@@ -103,14 +116,17 @@
                     return d.color;
                 });
 
-            //EXIT                     
-            circle.exit().remove();
+            //EXIT 
+
+            circle.exit()
+            // .attr("class", function(d) { return "fadeOut " + d.effect })
+            .remove();
             // circle.exit();
         });
     }
 
 
-    drawCirc(circle2);
+    drawCirc(circle1);
 
  
 

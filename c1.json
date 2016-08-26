@@ -4,13 +4,14 @@
             "y_axis": 50,
             "radius": 30,
             "color": "red",
-            "name": "Good Human Being"
+            "name": "Good Human Being",
+            "delay":10
         }, {
             "id": 2,
             "x_axis": 150,
             "y_axis": 90,
             "radius": 60,
-            "color": "green",
+            "color": "pink",
             "name": "IAS"
         }, {
             "id": 3,
