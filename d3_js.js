@@ -119,6 +119,13 @@ var id=2;
             //EXIT 
 
             circle.exit()
+            .transition()
+                   .duration(2500)
+                 
+                .attr("r", function(d) {
+                    return d.radius;
+                })
+                  .attr("r", 0)
             // .attr("class", function(d) { return "fadeOut " + d.effect })
             .remove();
             // circle.exit();
