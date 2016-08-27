@@ -26,12 +26,15 @@
     <div class="add"></div>
     <style type="text/css">
     .d3-tip {
+      height: auto;
+      width: 8em;
         line-height: 1;
         font-weight: bold;
         padding: 12px;
         background: rgba(0, 0, 0, 0.8);
         color: #fff;
         border-radius: 2px;
+        color:white !important;
     }
     /* Creates a small triangle extender for the tooltip */
     
@@ -61,54 +64,10 @@
         margin-left: 14em;
         margin-top: 5em;
     }
-    
-    @-webkit-keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    
-    .fadeIn {
-        -webkit-animation-name: fadeIn;
-        animation-name: fadeIn;
-        transition: .5s;
-    }
-    
-    @-webkit-keyframes fadeIn {
-        from {
-            opacity: 1;
-        }
-        to {
-            opacity: 0;
-        }
-    }
-    
-    @keyframes fadeIn {
-        from {
-            opacity: 1;
-        }
-        to {
-            opacity: 0;
-        }
-    }
-    
-    .fadeOut {
-        -webkit-animation-name: fadeOut;
-        animation-name: fadeOut;
-        transition: .5s;
-    }
+   /* .arc{
+      z-index: 5;
+    }*/
+   
     </style>
     <script type="text/javascript" src="d3_js.js"></script>
 </body>

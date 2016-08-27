@@ -4,8 +4,8 @@
         "y_axis": 50,
         "radius": 0,
         "color": "white",
-        "name": "Brazil",
-        "label": "ssssssssss",
+        "name": "",
+        "label": "",
         "delay": 10
     }, {
         "id": 2,
@@ -13,7 +13,7 @@
         "y_axis": 200,
         "radius": 30,
         "color": "#FF4EA6",
-        "label": "ss",
+        "label": "Nordeste-beach, mountains, Forro, Nature",
         "name": "Brazil"
     }, {
         "id": 3,
@@ -21,7 +21,7 @@
         "y_axis": 145,
         "radius": 60,
         "color": "#E8E466",
-        "label": "ss",
+        "label": "Ahmedabad-Kite Playing",
         "name": "Gujarat"
     }, {
         "id": 4,
@@ -29,7 +29,7 @@
         "y_axis": 240,
         "radius": 75,
         "color": "#5AA2FF",
-        "label": "ss",
+        "label": "Nepal- Gokyo lakes, Mithla Painting",
         "name": "Bihar"
     },
 
@@ -39,7 +39,7 @@
         "y_axis": 180,
         "radius": 90,
         "color": "#E88063",
-        "label": "ss",
+        "label": "Port of Tuticorin, Shores",
         "name": "Tamil Nadu"
     }, {
         "id": 6,
@@ -55,7 +55,7 @@
         "y_axis": 80,
         "radius": 25,
         "color": "#F1A1FF",
-        "label": "ss",
+        "label": "Fields",
         "name": "Hariyana"
     }, {
         "id": 8,
@@ -63,7 +63,7 @@
         "y_axis": 180,
         "radius": 45,
         "color": "#2F00FF",
-        "label": "ss",
+        "label": "Misal pav, Mangoes",
         "name": "Maharashtra"
     }, {
         "id": 9,

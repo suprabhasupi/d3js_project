@@ -4,8 +4,8 @@
         "y_axis": 50,
         "radius": 0,
         "color": "white",
-        "name": "Gaming",
-        "label": "ssssssssss",
+        "name": "",
+        "label": "",
         "delay": 10
     }, {
         "id": 2,
@@ -13,7 +13,7 @@
         "y_axis": 280,
         "radius": 65,
         "color": "#FF5100",
-        "label": "ss",
+        "label": "Clash of Clans, Counter Strike, Pokemon Go",
         "name": "Gaming"
     }, {
         "id": 3,
@@ -21,7 +21,7 @@
         "y_axis": 115,
         "radius": 90,
         "color": "#CA00E8",
-        "label": "ss",
+        "label": "Bollywood, Circle Dance",
         "name": "Dancing"
     }, {
         "id": 4,
@@ -37,7 +37,7 @@
         "y_axis": 100,
         "radius": 75,
         "color": "#00E852",
-        "label": "ss",
+        "label": "Web Design",
         "name": "Design"
     },
 
@@ -47,7 +47,7 @@
         "y_axis": 290,
         "radius": 30,
         "color": "#FFF100",
-        "label": "ss",
+        "label": "",
         "name": "Philosophy"
     }, {
         "id": 7,
@@ -55,7 +55,7 @@
         "y_axis": 180,
         "radius": 85,
         "color": "#FF4EFE",
-        "label": "ss",
+        "label": "Graphs, DE",
         "name": "Maths"
     }, {
         "id": 8,
@@ -63,7 +63,7 @@
         "y_axis": 80,
         "radius": 40,
         "color": "#8DE8AE",
-        "label": "ss",
+        "label": "Surfing",
         "name": "Surfing"
     }, {
         "id": 9,
@@ -71,7 +71,7 @@
         "y_axis": 180,
         "radius": 30,
         "color": "#D8FF71",
-        "label": "ss",
+        "label": "yoga",
         "name": "Yoga"
     }
 

@@ -4,8 +4,8 @@
     "y_axis": 180,
     "radius": 0,
     "color": "white",
-    "name": "Web Development",
-    "label": "ssssssssss",
+    "name": "",
+    "label": "",
     "delay": 10
 
 }, {
@@ -15,7 +15,7 @@
     "radius": 50,
     "color": "#4554FF",
     "name": "Operation Management",
-    "label": "ssssssssss",
+    "label": "Logistics, Supply Chain, Inventory Management, Field Operations",
     "delay": 10
 
 }, {
@@ -24,7 +24,7 @@
     "y_axis": 90,
     "radius": 70,
     "color": "#E84B01",
-    "label": "ss",
+    "label": "Haskell, Scala",
     "name": "Functional Programming"
 
 }, {
@@ -33,7 +33,7 @@
     "y_axis": 285,
     "radius": 85,
     "color": "#58E8C5",
-    "label": "ss",
+    "label": "HTML,CSS, Bootstrap, Angular.js, React.js, Servant, Yesod, Persistent",
     "name": "Web Development"
 
 
@@ -43,7 +43,7 @@
     "y_axis": 170,
     "radius": 100,
     "color": "#C1FF6B",
-    "label": "ss",
+    "label": "Illustration, Web, Product, Brand, Typography, Space",
     "name": "Design"
 
 }]

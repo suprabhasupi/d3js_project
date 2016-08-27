@@ -14,7 +14,7 @@
      .offset([-10, 0])
      .html(function(d) {
          //tooltip info shold be there in the json
-         return "<strong></strong> <span style='color:red'>" + d.name + "</span>";
+         return "<strong></strong> <span style='color:red'>" + d.label + "</span>";
      })
      //End Tip JS
 
@@ -31,8 +31,6 @@
  svgContainer.call(tip)
 
 
-
-
  function drawCirc(newData) {
      console.log(newData); // Confirms data source
      // Read in the JSON data
@@ -43,22 +41,16 @@
              .data(dataset, function(d) {
                  return d;
              });
-         // to append text
-         //  var text = svgContainer.selectAll("text")
-         //   .data(dataset, function(d) {
-         //     return d;
-         // })
-         //    .enter()
-         //  .append("text");
 
 
-         //  var textLabels = text
-         //  .attr("cx", function(d) { return d.x_axis; })
-         //  .attr("cy", function(d) { return d.y_axis; })
-         //  .text( function (d) { return d.label; })
-         //  .attr("font-family", "sans-serif")
-         //  .attr("font-size", "6em")
-         //  .attr("fill", "red");
+  // //             .on("mouseover",function(){
+  //             var sel = d3.select("text");
+  //     sel.moveToFront();
+  // // });
+    
+         // ----end of appending text
+
+
          // svgContainer.select(“this”).transition()
 
          circle.enter().append("circle")
@@ -117,7 +109,7 @@
          //          });
          //     }  
          // })
-
+         // .attr("transform", function(d) { return "translate(" + d.x_axis + "," + d.y_axis + ")"; })
          .attr("cx", function(d) {
                  // console.log(d)
                  return d.x_axis;
@@ -131,15 +123,44 @@
              .attr("r", function(d) {
                  return d.radius;
              })
-             // .transition()
-             .style("fill", function(d) {
-                 return d.color;
-             });
-         circle.append("text")
-             .attr("x_axis", function(d) {
-                 return -20 })
+
+         // .transition()
+         .style("fill", function(d) {
+             return d.color;
+         });
+
+
+          // to append text
+
+
+         var text = svgContainer.selectAll("text")
+             .data(dataset, function(d) {
+                 return d;
+             })
+             .enter()
+             .append("text");
+
+
+         text
+             .attr("x", function(d) {
+                 return d.x_axis;
+             })
+             .attr("dy", function(d) {
+                 return d.y_axis;
+             })
+              // .attr("opacity", "0")
+              .transition()
+             .duration(1000)
+             .delay(1500)
+             // attr("opacity", "1")
              .text(function(d) {
-                 return d.label });
+                 return d.name; })
+             .attr("class", "arc")
+             .attr("text-anchor", "middle")
+             .attr("font-family", "sans-serif")
+             .attr("font-size", "1em")
+             .attr("fill", "blue");
+
 
          /* Create the text for each block */
          // circle.append("text")
@@ -157,6 +178,8 @@
 
          //EXIT 
 
+
+// text.exit().remove();
          circle.exit()
              .transition()
              .duration(2000)
@@ -169,6 +192,7 @@
              .remove();
          // circle.exit();
      });
+
  }
 
 

@@ -4,8 +4,8 @@
         "y_axis": 50,
         "radius": 0,
         "color": "white",
-        "name": "IIT Kanpur",
-        "label": "ssssssssss",
+        "name": "",
+        "label": "",
         "delay": 10
     }, {
         "id": 2,
@@ -14,7 +14,7 @@
         "radius": 80,
         "color": "#FFAB73",
         "name": "IIT Kanpur",
-        "label": "ssssssssss",
+        "label": "B.Tech(ChE), 2007-2011",
         "delay": 10
     }, {
         "id": 3,
@@ -22,7 +22,7 @@
         "y_axis": 200,
         "radius": 86,
         "color": "#DF8DE8",
-        "label": "ss",
+        "label": "B.Tech(EE), 2007-2011",
         "name": "UFCG"
     }, {
         "id": 4,
@@ -30,7 +30,7 @@
         "y_axis": 85,
         "radius": 50,
         "color": "#76B7FF",
-        "label": "ss",
+        "label": "B.E(CS)   2010-2014",
         "name": "PESIT"
     }, {
         "id": 5,
@@ -38,7 +38,7 @@
         "y_axis": 190,
         "radius": 55,
         "color": "#86E892",
-        "label": "ss",
+        "label": "B.Tech(IT), 2011-2015",
         "name": "Hindustan University"
     },
 
@@ -48,7 +48,7 @@
         "y_axis": 140,
         "radius": 55,
         "color": "#FFE56E",
-        "label": "ss",
+        "label": "B.Des, 2006-2010",
         "name": "NID Ahmedabad"
     }, {
         "id": 7,
@@ -56,7 +56,7 @@
         "y_axis": 100,
         "radius": 30,
         "color": "#6CFFF1",
-        "label": "ss",
+        "label": "B.E(CS), 2008-2012",
         "name": "SASTRA"
     }, {
         "id": 8,
@@ -64,7 +64,7 @@
         "y_axis": 180,
         "radius": 65,
         "color": "#6DFF19",
-        "label": "ss",
+        "label": "B.E(CS), 2007-2011",
         "name": "Viscesarya University"
     }
 
