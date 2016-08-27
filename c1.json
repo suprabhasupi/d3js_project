@@ -1,45 +1,62 @@
 [{
-            "id": 1,
-            "x_axis": 50,
-            "y_axis": 50,
-            "radius": 0,
-            "color": "white",
-            "name": "Good Human Being",
-            "label":"ss",
-            "delay":10
-        }, {
-            "id": 2,
-            "x_axis": 150,
-            "y_axis": 90,
-            "radius": 60,
-            "color": "pink",
-            "label":"ss",
-            "name": "IAS"
-        }, {
-            "id": 3,
-            "x_axis": 280,
-            "y_axis": 185,
-            "radius": 80,
-            "color": "lightgrey",
-            "label":"ss",
-            "name": "Doctor"
-        }, {
-            "id": 4,
-            "x_axis": 500,
-            "y_axis": 170,
-            "radius": 120,
-            "color": "mediumpurple",
-            "label":"ss",
-            "name": "Frontend Ninza"
-        },
+        "id": 1,
+        "x_axis": 50,
+        "y_axis": 50,
+        "radius": 0,
+        "color": "#58F0FF",
+        "name": "Good Human Being",
+        "label": "ssssssssss",
+        "delay": 10
+    }, {
+        "id": 2,
+        "x_axis": 100,
+        "y_axis": 110,
+        "radius": 70,
+        "color": "#70E838",
+        "label": "ss",
+        "name": "Good Human Being"
+    }, {
+        "id": 3,
+        "x_axis": 220,
+        "y_axis": 220,
+        "radius": 50,
+        "color": "#FFCB4A",
+        "label": "ss",
+        "name": "Doctor"
+    }, {
+        "id": 4,
+        "x_axis": 340,
+        "y_axis": 140,
+        "radius": 40,
+        "color": "#E84538",
+        "label": "ss",
+        "name": "Beautician"
+    },
 
-        {
-            "id": 5,
-            "x_axis": 680,
-            "y_axis": 180,
-            "radius": 35,
-            "color": "linen",
-            "label":"ss",
-            "name": "Beautician"
-        }
-    ]
+    {
+        "id": 5,
+        "x_axis": 460,
+        "y_axis": 180,
+        "radius": 60,
+        "color": "#863DFF",
+        "label": "ss",
+        "name": "IAS"
+    }, {
+        "id": 6,
+        "x_axis": 600,
+        "y_axis": 250,
+        "radius": 40,
+        "color": "#FF52D8",
+        "label": "ss",
+        "name": "Free-Diver"
+    }, {
+        "id": 7,
+        "x_axis": 750,
+        "y_axis": 180,
+        "radius": 30,
+        "color": "#93E8CB",
+        "label": "ss",
+        "name": "Surfer"
+    }
+
+]

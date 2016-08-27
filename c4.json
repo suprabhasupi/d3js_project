@@ -1,0 +1,78 @@
+[{
+        "id": 1,
+        "x_axis": 50,
+        "y_axis": 50,
+        "radius": 0,
+        "color": "white",
+        "name": "Gaming",
+        "label": "ssssssssss",
+        "delay": 10
+    }, {
+        "id": 2,
+        "x_axis": 90,
+        "y_axis": 280,
+        "radius": 65,
+        "color": "#FF5100",
+        "label": "ss",
+        "name": "Gaming"
+    }, {
+        "id": 3,
+        "x_axis": 200,
+        "y_axis": 115,
+        "radius": 90,
+        "color": "#CA00E8",
+        "label": "ss",
+        "name": "Dancing"
+    }, {
+        "id": 4,
+        "x_axis": 320,
+        "y_axis": 230,
+        "radius": 30,
+        "color": "#136DFF",
+        "label": "ss",
+        "name": "Astronomy"
+    }, {
+        "id": 5,
+        "x_axis": 400,
+        "y_axis": 100,
+        "radius": 75,
+        "color": "#00E852",
+        "label": "ss",
+        "name": "Design"
+    },
+
+    {
+        "id": 6,
+        "x_axis": 390,
+        "y_axis": 290,
+        "radius": 30,
+        "color": "#FFF100",
+        "label": "ss",
+        "name": "Philosophy"
+    }, {
+        "id": 7,
+        "x_axis": 590,
+        "y_axis": 180,
+        "radius": 85,
+        "color": "#FF4EFE",
+        "label": "ss",
+        "name": "Maths"
+    }, {
+        "id": 8,
+        "x_axis": 730,
+        "y_axis": 80,
+        "radius": 40,
+        "color": "#8DE8AE",
+        "label": "ss",
+        "name": "Surfing"
+    }, {
+        "id": 9,
+        "x_axis": 830,
+        "y_axis": 180,
+        "radius": 30,
+        "color": "#D8FF71",
+        "label": "ss",
+        "name": "Yoga"
+    }
+
+]

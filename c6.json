@@ -1,0 +1,55 @@
+[{
+        "id": 1,
+        "x_axis": 50,
+        "y_axis": 50,
+        "radius": 0,
+        "color": "white",
+        "name": "Funny",
+        "label": "ssssssssss",
+        "delay": 10
+    }, {
+        "id": 2,
+        "x_axis": 80,
+        "y_axis": 100,
+        "radius": 60,
+        "color": "#557AE8",
+        "name": "Funny",
+        "label": "ssssssssss",
+        "delay": 10
+    }, {
+        "id": 3,
+        "x_axis": 210,
+        "y_axis": 260,
+        "radius": 90,
+        "color": "#F467FF",
+        "label": "ss",
+        "name": "Social"
+    }, {
+        "id": 4,
+        "x_axis": 350,
+        "y_axis": 100,
+        "radius": 80,
+        "color": "#CFE860",
+        "label": "ss",
+        "name": "Introvert"
+    }, {
+        "id": 5,
+        "x_axis": 500,
+        "y_axis": 170,
+        "radius": 50,
+        "color": "#6AFFBF",
+        "label": "ss",
+        "name": "Serious"
+    },
+
+    {
+        "id": 6,
+        "x_axis": 680,
+        "y_axis": 180,
+        "radius": 100,
+        "color": "#FFC870",
+        "label": "ss",
+        "name": "Caring"
+    }
+
+]
