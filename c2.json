@@ -2,9 +2,10 @@
             "id": 1,
             "x_axis": 150,
             "y_axis": 180,
-            "radius": 30,
-            "color": "green",
+            "radius": 0,
+            "color": "white",
             "name": "Good Human Being",
+            "label":"ss",
             "delay":10
             
         }, {
@@ -13,6 +14,7 @@
             "y_axis": 90,
             "radius": 60,
             "color": "blue",
+            "label":"ss",
             "name": "IAS"
             
         }, {
@@ -21,6 +23,7 @@
             "y_axis": 185,
             "radius": 80,
             "color": "red",
+            "label":"ss",
             "name": "Doctor"
             
         }, {
@@ -29,6 +32,7 @@
             "y_axis": 170,
             "radius": 120,
             "color": "yellow",
+            "label":"ss",
             "name": "Frontend Ninza"
             
         },
@@ -39,6 +43,7 @@
             "y_axis": 180,
             "radius": 35,
             "color": "pink",
+            "label":"ss",
             "name": "Beautician"
             
         }

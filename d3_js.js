@@ -48,7 +48,7 @@ var id=2;
           // select element in current context
           d3.select( this )
             // add transition
-            .transition()
+            // .transition()
             // change attribute
             // .attr( 'r', 10 );
             .style("fill", "red");
@@ -58,7 +58,7 @@ var id=2;
           // select element in current context
           d3.select( this )
             // add transition
-            .transition()
+            // .transition()
             // change attribute
             // .attr( 'r', 16 );
             .style("fill", function(d) {
@@ -115,12 +115,25 @@ var id=2;
                 .style("fill", function(d) {
                     return d.color;
                 });
+                 /* Create the text for each block */
+    // circle.append("text")
+    //     .attr("dx", function(d){return -20})
+    //     .text(function(d){return d.label})
+// var label = circle.append("text")
+//     .text(function(d){
+//       return d.label;
+//     })
+//     .attr({
+//       "alignment-baseline": "middle",
+//       "text-anchor": "middle",
+//       "color":"blue"
+//     })
 
             //EXIT 
 
             circle.exit()
             .transition()
-                   .duration(2500)
+                   .duration(2000)
                  
                 .attr("r", function(d) {
                     return d.radius;
@@ -134,10 +147,6 @@ var id=2;
 
 
     drawCirc(circle1);
-
- 
-
-     
 
 
     // var showAmb = function() {
