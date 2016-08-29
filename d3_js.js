@@ -164,10 +164,10 @@
              // .duration(500)
 
          .style("font-size", function(d) {
-             return Math.min(2 * d.radius, (2 * d.radius - 8) / this.getComputedTextLength() * 12) + "px";
-         })
-         // .attr("transform", "scale(.5)")
-         .attr("fill", "blue");
+                 return Math.min(2 * d.radius, (2 * d.radius - 8) / this.getComputedTextLength() * 12) + "px";
+             })
+             // .attr("transform", "scale(.5)")
+             .attr("fill", "blue");
 
 
          /* Create the text for each block */
@@ -216,10 +216,10 @@
 
      // .delay(950)
      .duration(1000)
-     .style("font-size", function(d) {
-         return Math.min(2 * d.radius, (2 * d.radius - 8) / this.getComputedTextLength() * 12) + "px";
-     })
-     .remove();
+         .style("font-size", function(d) {
+             return Math.min(2 * d.radius, (2 * d.radius - 8) / this.getComputedTextLength() * 12) + "px";
+         })
+         .remove();
 
  }
 
@@ -266,10 +266,25 @@
  // }
 
  d3.select('#opts')
-     .on('change', function() {
+     .on('click', function() {
          var newData = eval(d3.select(this).property('value'));
          drawCirc(newData); // Call with new selection.
      });
+
+ d3.select('#opts2')
+     .on('click', function() {
+         var newData = eval(d3.select(this).property('value'));
+         drawCirc(newData); // Call with new selection.
+     });
+
+ //tab1
+
+ //tab2
+ //tab3
+ //tab4
+ // <li><a href=""><button>tab1</a></li>
+ // <li></li>
+
 
  // var circleAttributes=circles
  // .transition()
