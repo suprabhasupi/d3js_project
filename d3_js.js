@@ -43,11 +43,11 @@
              });
 
 
-  // //             .on("mouseover",function(){
-  //             var sel = d3.select("text");
-  //     sel.moveToFront();
-  // // });
-    
+         // //             .on("mouseover",function(){
+         //             var sel = d3.select("text");
+         //     sel.moveToFront();
+         // // });
+
          // ----end of appending text
 
 
@@ -83,21 +83,6 @@
              .on('mouseout', tip.hide);
 
          circle
-         // .transition()
-
-         // .duration(500)
-         // .delay(1000)
-         // .ease("bounce")
-
-
-             .attr("id", function(d, i) {
-             if (i == 1) {
-                 // circle.style("delay",function(d){
-                 return i.delay = 1000000;
-                 // })
-             }
-         })
-
 
          // .attr("id",function(d){
          //     // return d.id;
@@ -110,7 +95,7 @@
          //     }  
          // })
          // .attr("transform", function(d) { return "translate(" + d.x_axis + "," + d.y_axis + ")"; })
-         .attr("cx", function(d) {
+             .attr("cx", function(d) {
                  // console.log(d)
                  return d.x_axis;
              })
@@ -130,7 +115,7 @@
          });
 
 
-          // to append text
+         // to append text
 
 
          var text = svgContainer.selectAll("text")
@@ -140,26 +125,49 @@
              .enter()
              .append("text");
 
+         // text
+         //     .attr("x", function(d) {
+         //         return d.x_axis;
+         //     })
+         //     .attr("dy", function(d) {
+         //         return d.y_axis + 7;
+         //     })
+         //     .attr("transform", "scale(0)");
 
          text
              .attr("x", function(d) {
                  return d.x_axis;
              })
              .attr("dy", function(d) {
-                 return d.y_axis;
+                 return d.y_axis + 7;
              })
-              // .attr("opacity", "0")
-              .transition()
+             // .attr("opacity", "0")
+             .transition()
+             .delay(950)
              .duration(1000)
-             .delay(1500)
+             // .delay(1700)
              // attr("opacity", "1")
              .text(function(d) {
-                 return d.name; })
-             .attr("class", "arc")
+                 return d.name;
+             })
+             // .attr("class", "arc")
+             // .attr("class", function(d) { return "zoomIn " + d.zoomIn })
+             // .attr("class", "zoomIn")
              .attr("text-anchor", "middle")
              .attr("font-family", "sans-serif")
-             .attr("font-size", "1em")
-             .attr("fill", "blue");
+             // .attr("font-size", "0")
+             // .attr("font-size", "1em")
+             // .attr('font-size', '1em')
+             // .duration(500)
+             // .transition()
+             // .attr('font-size', '2em')
+             // .duration(500)
+
+         .style("font-size", function(d) {
+             return Math.min(2 * d.radius, (2 * d.radius - 8) / this.getComputedTextLength() * 12) + "px";
+         })
+         // .attr("transform", "scale(.5)")
+         .attr("fill", "blue");
 
 
          /* Create the text for each block */
@@ -179,7 +187,14 @@
          //EXIT 
 
 
-// text.exit().remove();
+         // text.exit()
+         //  .transition()
+         //              .duration(1000)
+         //              .delay(1500)
+         //              .remove();
+
+
+
          circle.exit()
              .transition()
              .duration(2000)
@@ -191,7 +206,20 @@
              // .attr("class", function(d) { return "fadeOut " + d.effect })
              .remove();
          // circle.exit();
+
+
      });
+
+     d3.selectAll("text")
+
+     .transition()
+
+     // .delay(950)
+     .duration(1000)
+     .style("font-size", function(d) {
+         return Math.min(2 * d.radius, (2 * d.radius - 8) / this.getComputedTextLength() * 12) + "px";
+     })
+     .remove();
 
  }
 
