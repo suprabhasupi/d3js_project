@@ -39,8 +39,8 @@
         "y_axis": 180,
         "radius": 90,
         "color": "#E88063",
-        "label": "Port of Tuticorin, Shores",
-        "name": "Tamil Nadu"
+        "label": "s",
+        "name": "Uttar Pradesh"
     }, {
         "id": 6,
         "x_axis": 600,
@@ -65,14 +65,6 @@
         "color": "#2F00FF",
         "label": "Misal pav, Mangoes",
         "name": "Maharashtra"
-    }, {
-        "id": 9,
-        "x_axis": 850,
-        "y_axis": 60,
-        "radius": 25,
-        "color": "#E80614",
-        "label": "ss",
-        "name": "Uttar Pradesh"
     }
 
 ]

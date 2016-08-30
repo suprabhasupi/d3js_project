@@ -5,6 +5,7 @@
 <head>
     <title>Our project</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <script type="text/javascript" src="script/d3.v2.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js">
@@ -21,6 +22,9 @@
         <option value="circle5">Education</option>
         <option value="circle6">Personality</option>
     </select> -->
+    <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="col-md-2 col-sm-2"></div>
+    <div class="col-md-9 col-sm-9 col-xs-12 graph_box">
 
     <button id="opts" value="circle1" class="button_design">Aspirations</button>
     <button id="opts2" value="circle2" class="button_design">Skills</button>
@@ -30,13 +34,15 @@
 
   <button id="opts5" value="circle5" class="button_design">Education</button>
   <button id="opts6" value="circle6" class="button_design">Personality</button>
-
-
-
-    <!-- 
-<button onclick="showAge()"> Show age</button>
-<button onclick="showAmb()"> Show Amb</button> -->
     <div class="add"></div>
+</div>
+<div class="col-md-1 col-sm-1"></div>
+</div>
+
+
+
+
+
     <style type="text/css">
     option{
       /*display: block;*/
@@ -46,12 +52,34 @@
     width: 100px; 
     overflow: auto;
 }*/
+.graph_box{
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 1em;
+    /*width: 88%;*/
+}
 .button_design{
       background: #3c3232;
     color: white;
     padding: .7em 1.4em;
     outline: none;
+        border: 1px solid #424040;
+            border-radius: 3px;
+             /*box-shadow: 10px 10px 5px #888888;*/
 }
+.button_design:hover{
+background: #c3bebe;
+  color: black;
+      box-shadow: 4px 3px 10px #888888;
+
+  border: none;
+}
+.button_design:focus{
+background: #c3bebe;
+  color: black;
+  border: none;
+      box-shadow: 4px 3px 10px #888888;
+  }
     .d3-tip {
       height: auto;
       width: 8em;
@@ -88,8 +116,8 @@
         position: relative;
         display: flex;
         align-items: center;
-        margin-left: 14em;
-        margin-top: 5em;
+        /*margin-left: 14em;*/
+        margin-top: 2em;
     }
    /* .arc{
       z-index: 5;

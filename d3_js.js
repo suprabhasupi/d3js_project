@@ -25,7 +25,7 @@
  var svgContainer = d3.select(".add").append("svg")
      .attr("width", 900)
      .attr("height", 400)
-     .style("border", "1px solid black");
+     .style("border", "1px solid white");
 
      // var svgContainer = d3.select(".add2").append("svg")
      // .attr("width", 900)
@@ -160,36 +160,12 @@
              // .duration(500)
 
          .style("font-size", function(d) {
-             return Math.min(2 * d.radius, (2 * d.radius - 8) / this.getComputedTextLength() * 10) + "px";
+             return Math.min(2 * d.radius, (2 * d.radius - 8) / this.getComputedTextLength() * 11) + "px";
          })
          // .attr("transform", "scale(.5)")
-         .attr("fill", "blue");
+         .attr("fill", "black");
 
-
-         /* Create the text for each block */
-         // circle.append("text")
-         //     .attr("dx", function(d){return -20})
-         //     .text(function(d){return d.label})
-         // var label = circle.append("text")
-         //     .text(function(d){
-         //       return d.label;
-         //     })
-         //     .attr({
-         //       "alignment-baseline": "middle",
-         //       "text-anchor": "middle",
-         //       "color":"blue"
-         //     })
-
-         //EXIT 
-
-
-         // text.exit()
-         //  .transition()
-         //              .duration(1000)
-         //              .delay(1500)
-         //              .remove();
-
-
+      
 
          circle.exit()
              .transition()
@@ -213,7 +189,7 @@
      // .delay(950)
      .duration(1200)
      .style("font-size", function(d) {
-         return Math.min(2 * d.radius, (2 * d.radius - 6) / this.getComputedTextLength() * 3) + "px";
+         return Math.min(2 * d.radius, (2 * d.radius - 6) / this.getComputedTextLength() * 1) + "px";
      })
     // .attr('font-size', '0px')
      .remove();
