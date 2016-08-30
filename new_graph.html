@@ -12,19 +12,46 @@
 </head>
 
 <body>
-    <select id="opts">
+
+   <!--  <select id="opts">
         <option value="circle1" selected="selected">Aspirations</option>
         <option value="circle2">Skills</option>
         <option value="circle3">Belongs To</option>
         <option value="circle4">Interests</option>
         <option value="circle5">Education</option>
         <option value="circle6">Personality</option>
-    </select>
+    </select> -->
+
+    <button id="opts" value="circle1" class="button_design">Aspirations</button>
+    <button id="opts2" value="circle2" class="button_design">Skills</button>
+      <button id="opts3" value="circle3" class="button_design">Belongs To</button>
+
+  <button id="opts4" value="circle4" class="button_design">Interests</button>
+
+  <button id="opts5" value="circle5" class="button_design">Education</button>
+  <button id="opts6" value="circle6" class="button_design">Personality</button>
+
+
+
     <!-- 
 <button onclick="showAge()"> Show age</button>
 <button onclick="showAmb()"> Show Amb</button> -->
     <div class="add"></div>
     <style type="text/css">
+    option{
+      /*display: block;*/
+      /*white-space: normal;*/
+    }
+   /* #opts{
+    width: 100px; 
+    overflow: auto;
+}*/
+.button_design{
+      background: #3c3232;
+    color: white;
+    padding: .7em 1.4em;
+    outline: none;
+}
     .d3-tip {
       height: auto;
       width: 8em;

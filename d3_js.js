@@ -27,6 +27,11 @@
      .attr("height", 400)
      .style("border", "1px solid black");
 
+     // var svgContainer = d3.select(".add2").append("svg")
+     // .attr("width", 900)
+     // .attr("height", 400)
+     // .style("border", "1px solid black");
+
  //for the tip
  svgContainer.call(tip)
 
@@ -155,7 +160,7 @@
              // .duration(500)
 
          .style("font-size", function(d) {
-             return Math.min(2 * d.radius, (2 * d.radius - 8) / this.getComputedTextLength() * 12) + "px";
+             return Math.min(2 * d.radius, (2 * d.radius - 8) / this.getComputedTextLength() * 10) + "px";
          })
          // .attr("transform", "scale(.5)")
          .attr("fill", "blue");
@@ -206,10 +211,11 @@
      .transition()
 
      // .delay(950)
-     .duration(1500)
+     .duration(1200)
      .style("font-size", function(d) {
-         return Math.min(2 * d.radius, (2 * d.radius - 8) / this.getComputedTextLength() * 12) + "px";
+         return Math.min(2 * d.radius, (2 * d.radius - 6) / this.getComputedTextLength() * 3) + "px";
      })
+    // .attr('font-size', '0px')
      .remove();
 
  }
@@ -218,10 +224,52 @@
  drawCirc(circle1);
 
 
+
+
  d3.select('#opts')
-     .on('change', function() {
+     .on('click', function() {
+         var newData = eval(d3.select(this).property('value'));
+         drawCirc(newData); // Call with new selection.
+     });
+
+ d3.select('#opts1')
+     .on('click', function() {
+         var newData = eval(d3.select(this).property('value'));
+         drawCirc(newData); // Call with new selection.
+     });
+
+
+ d3.select('#opts2')
+     .on('click', function() {
+         var newData = eval(d3.select(this).property('value'));
+         drawCirc(newData); // Call with new selection.
+     });
+
+
+ d3.select('#opts3')
+     .on('click', function() {
+         var newData = eval(d3.select(this).property('value'));
+         drawCirc(newData); // Call with new selection.
+     });
+
+
+ d3.select('#opts4')
+     .on('click', function() {
          var newData = eval(d3.select(this).property('value'));
          drawCirc(newData); // Call with new selection.
      });
 
  
+ d3.select('#opts5')
+     .on('click', function() {
+         var newData = eval(d3.select(this).property('value'));
+         drawCirc(newData); // Call with new selection.
+     });
+
+
+ d3.select('#opts6')
+     .on('click', function() {
+         var newData = eval(d3.select(this).property('value'));
+         drawCirc(newData); // Call with new selection.
+     });
+
